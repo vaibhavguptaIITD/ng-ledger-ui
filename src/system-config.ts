@@ -3,10 +3,22 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+   'moment': 'vendor/moment/moment.js',
+   'ng2-highcharts':'vendor/ng2-highcharts',
+   'ng2-bootstrap': 'vendor/ng2-bootstrap'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'moment':{
+    format: 'cjs'
+  },
+  'ng2-highcharts':{
+    format: 'cjs'
+  },
+   'ng2-bootstrap':{
+    format: 'cjs'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,6 +41,8 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/current-expense',
+  'app/balance',
   /** @cli-barrel */
 ];
 
